@@ -50,12 +50,21 @@ function Rig({ mouse }) {
 function App() {
   const mouse = useRef([0, 0])
   return (
+    <div id="root">
     <Canvas
       camera={{ position: [0, 0, 10], fov: 25 }}
       onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
       <Lines count={40} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
       <Rig mouse={mouse} />
     </Canvas>
+    <div id="wrapper">
+      <div className="content">
+      <header className="header">
+      <h1>hoge</h1>
+      </header>
+      </div>
+    </div>
+    </div>
   )
 }
 
