@@ -10,7 +10,7 @@ return(
   <main>
     <section>
       <h2>hum_or_rec@outlook.com</h2><br/>
-      <a href="https://github.com/marigotten" target="_blank">
+      <a href="https://github.com/marigotten" target="_blank" rel="noopener noreferrer">
       <span className="iconify" data-icon="fa-brands:github-square" data-inline="false"></span>
       </a>
     </section>
