@@ -3,7 +3,9 @@ import React, { useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import * as meshline from 'three.meshline'
 import { extend, Canvas, useFrame, useThree } from 'react-three-fiber'
+// import { VFXProvider, VFXSpan } from 'react-vfx';
 import './index.css'
+import Home from './Home'
 
 extend(meshline)
 
@@ -57,14 +59,27 @@ function App() {
       <Lines count={40} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
       <Rig mouse={mouse} />
     </Canvas>
-    <div id="wrapper">
-      <div className="content">
+    {/* <div id="wrapper">
       <header className="header">
-      <h1>hoge</h1>
+      <h1>mari goto</h1>
       </header>
-      </div>
-    </div>
-    </div>
+      <main>
+      <section>
+          <h2>about</h2>
+        </section>
+        
+        <section>
+          <h2>projects</h2>
+        </section>
+        
+        <section>
+          <h2>hum_or_rec@outlook.com</h2>
+        </section>
+        
+      </main>
+      </div>*/}
+<Home />
+    </div> 
   )
 }
 
